@@ -25,7 +25,7 @@ header > img
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   padding-top: 50px;
 }
 .InputField 
@@ -36,6 +36,8 @@ header > img
   background-color: rgb(200, 199, 199);
   border: none;
   font-size: 15px;
+  padding-left: 20px;
+  color: rgb(83, 82, 82);
 }
 .SubmitButton
 {
@@ -44,5 +46,18 @@ header > img
   height: 35px;
   background-color: rgb(92, 114, 132);
   border: none;
+  font-size: 20px;
+  color:  rgb(47, 46, 46);;
+}
+.IngrediantsList > li
+{
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.IngrediantsList
+{
+  margin-top: 50px;
+  color: aliceblue;
   font-size: 20px;
 }
