@@ -9,7 +9,7 @@ export function Main()
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const ingrediant = formData.get("ingrediant")
-        setIngrediants(...ingrediants,ingrediant)
+        setIngrediants([...ingrediants,ingrediant])
     }
 
     return (
