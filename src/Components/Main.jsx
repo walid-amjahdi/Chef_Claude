@@ -16,8 +16,8 @@ export function Main()
         <>
             <main className="MainContent" >
                 <form onSubmit={handleSubmit}>
-                    <input type="text" className="InputField" placeholder="Add the ingrediant ..." name="ingrediant"/>
-                    <button type="submit" className="SubmitButton">+ Add Ingrediants</button>
+                    <input type="text" className="InputField" placeholder="Example" name="ingrediant"/>
+                    <button type="submit" className="SubmitButton">+ Add </button>
                 </form>
             </main>
             <ul className="IngrediantsList">
