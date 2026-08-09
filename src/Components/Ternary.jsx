@@ -2,11 +2,17 @@ import { useState } from "react"
 
 export function Ternary()
 {
-    let isGoingOut = false 
+    const [isGoingOut ,setIsGoingOut] = useState(true)
+
+    function toggleIsGoingOut()
+    {
+        setIsGoingOut((prev)=> !prev)
+    }
+
     return (
         <>
             <h3>are you going out</h3>
-            <h3>{isGoingOut ? "yes" : "no"}</h3>
+            <button onClick={toggleIsGoingOut}>{isGoingOut ? "yes" : "no"}</button>
         </>
     )
 }
