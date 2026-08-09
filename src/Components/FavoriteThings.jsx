@@ -7,7 +7,7 @@ export function FavoriteThings()
 
     function addThings()
     {
-        setMyFavorite(prevThings => [...prevThings,"test"])
+        setMyFavorite(prevThings => [...prevThings,favoriteThings[myFavorite.length]])
     }
 
     return (
