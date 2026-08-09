@@ -2,12 +2,11 @@ import { useState } from "react"
 
 export function Ternary()
 {
-    let isGoingOut = true 
-    let answer = isGoingOut? "yes" : "no"
+    let isGoingOut = false 
     return (
         <>
             <h3>are you going out</h3>
-            <h3>{answer}</h3>
+            <h3>{isGoingOut ? "yes" : "no"}</h3>
         </>
     )
 }
