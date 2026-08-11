@@ -16,6 +16,8 @@ export function Main()
         setValue(event.target.value)
     }
 
+
+    
     return (
         <>
             <main className="MainContent" >
