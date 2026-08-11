@@ -2,25 +2,15 @@ import { useState } from "react"
 
 export function FavoriteThings()
 {
-    const [myFavorite,setMyFavorite] = useState([])
-    const [favoriteThings,setFavoriteThings] = useState(["1","2","3","4"])
-
-    function addThings()
-    {
-        setMyFavorite(prevThings => [...prevThings,favoriteThings[myFavorite.length]])
-    }
-
     return (
         <>
-            <button className="SubmitButton" 
-            onClick={addThings}>
-                +Add
-            </button>
-            <ul className="IngrediantsList">
-                {myFavorite.map((thing,index)=>(
-                    <li key={index}>{thing}</li>
-                ))}
-            </ul>
+            <form action="">
+                <label htmlFor="userName">UserName : </label>
+                <input type="text" name="userName" id="userName" />
+                <br />
+                <label htmlFor="password">Password : </label>
+                <input type="password" name="password" id="password" />
+            </form>
         </>
     )
 }
