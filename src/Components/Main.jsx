@@ -5,9 +5,8 @@ export function Main()
     const [ingrediants,setIngrediants] = useState(["ing1","ing2","ing3"])
     const [value,setValue] = useState("")
 
-    const handleSubmit = (event) =>
+    const handleSubmit = (formData) =>
     {
-        event.preventDefault()
         setIngrediants([...ingrediants,value])
         setValue("")
     }
@@ -20,7 +19,7 @@ export function Main()
     return (
         <>
             <main className="MainContent" >
-                <form onSubmit={handleSubmit}>
+                <form action={handleSubmit}>
                     <input type="text" className="InputField" placeholder="Example" name="ingrediant" value={value} onChange={typing}/>
                     <button type="submit" className="SubmitButton">+ Add </button>
                 </form>
