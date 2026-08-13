@@ -2,20 +2,20 @@ import { useState } from "react"
 
 export function Notification()
 {
-    const [notifications,setNotifications] = useState([])
+    const [notifications,setNotifications] = useState([1,2,3,5])
 
     function showNotifications()
     {
         if(notifications.length === 0)
-            return <h3>you have no notifications !!!</h3>
+            return "you have no notifications !!!"
         else if(notifications.length === 1)
-            return <h3>you have 1 notification !!!</h3>
+            return "you have 1 notification !!!"
         else 
-            return <h3>you have {notifications.length} notifications !!!</h3>
+            return "you have " + notifications.length + " notifications !!!"
     }
     return (
         <>
-            {showNotifications()}        
+            <h3>{showNotifications()}</h3>      
         </>
     )
 }
