@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export function Main()
 {
-    const [ingrediants,setIngrediants] = useState(["ing1","ing2","ing3"])
+    const [ingrediants,setIngrediants] = useState([])
     const [value,setValue] = useState("")
 
     const handleSubmit = (formData) =>
@@ -26,11 +26,11 @@ export function Main()
                     <button type="submit" className="SubmitButton">+ Add </button>
                 </form>
             </main>
-            <ul className="IngrediantsList">
+            {(ingrediants.length > 0) && <ul className="IngrediantsList">
                 {ingrediants.map((ing,index)=>(
                     <li key={index}>{ing}</li>
                 ))}
-            </ul>
+            </ul>}
         </>
     )
 }
