@@ -60,3 +60,8 @@ header > img
   color: aliceblue;
   font-size: 20px;
 }
+
+.getRecipeDiv
+{
+  margin-left: 50px;
+}
