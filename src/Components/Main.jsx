@@ -26,11 +26,16 @@ export function Main()
                     <button type="submit" className="SubmitButton">+ Add </button>
                 </form>
             </main>
-            {(ingrediants.length > 0) && <ul className="IngrediantsList">
+            {(ingrediants.length > 0) && <> <ul className="IngrediantsList">
                 {ingrediants.map((ing,index)=>(
                     <li key={index}>{ing}</li>
                 ))}
-            </ul>}
+            </ul>
+            <div className="getRecipeDiv">
+                <h4>The Recipe</h4>
+                <button>Get Recipe :</button>
+            </div>
+            </>}
         </>
     )
 }
