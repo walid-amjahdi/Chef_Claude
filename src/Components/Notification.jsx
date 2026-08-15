@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { ShowNotification } from "./ShowNotification"
 
 export function Notification()
 {
@@ -13,9 +14,5 @@ export function Notification()
         else 
             return "you have " + notifications.length + " notifications !!!"
     }
-    return (
-        <>
-            <h3>{showNotifications()}</h3>      
-        </>
-    )
+    return <ShowNotification message={showNotifications()} />
 }

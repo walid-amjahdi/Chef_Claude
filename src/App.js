@@ -3,7 +3,7 @@ import { Header } from './Components/Header';
 import { Main } from './Components/Main';
 // import { FavoriteThings } from './Components/FavoriteThings';
 // import { ConditionalComp } from './Components/ConditionalComp';
-// import { Notification } from './Components/Notification';
+import { Notification } from './Components/Notification';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Main />
       {/* <FavoriteThings />
-      <ConditionalComp />
-      <Notification /> */}
+      <ConditionalComp />*/}
+      <Notification /> 
     </>
   );
 }
