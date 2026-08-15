@@ -3,7 +3,7 @@ import { ShowNotification } from "./ShowNotification"
 
 export function Notification()
 {
-    const [notifications,setNotifications] = useState([1,2,3,5])
+    const [notifications,setNotifications] = useState([])
 
     function showNotifications()
     {
